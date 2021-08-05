@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 300px;
+            height: 161px;
+        }
+
+        div {
+            position: relative;
+            width: 600px;
+            height: 161px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style: none;
+            width: 1800px;
+            height: 161px;
+            background: #000;
+        }
+
+        ul > li {
+            float: left;
+        }
+
+        .ul2 {
+            position: absolute;
+            bottom: 10px;
+            right: 50px;
+            list-style: none;
+            width: 160px;
+            height: 20px;
+            background: red;
+        }
+
+        .li2 {
+            margin-left: 5px;
+            float: left;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+        }
+    </style>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            var offset = 0;
+            var timer;
+
+            function autoPlay() {
+                timer = setInterval(function () {
+                    offset += -1;
+                    if (offset <= -1200) {
+                        offset = 0;
+                    }
+                    $('ul').css('marginLeft', offset);
+                }, 10);
+            }
+
+            autoPlay();
+
+            $('li').hover(function () {
+                clearInterval(timer);
+                $(this).siblings().fadeTo(100, .5)
+                $(this).fadeTo(100, 1)
+            }, function () {
+                autoPlay();
+                $('li').fadeTo(100, 1)
+            })
+
+            $('.li2').click(function (){
+                offset=-600;
+                autoPlay();
+            })
+        })
+    </script>
+</head>
+<body>
+<div>
+    <ul>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/img1.jpg" alt=""></a></li>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/img2.jpg" alt=""></a></li>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/img3.jpg" alt=""></a></li>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/6b72c57a1423c866d2b9dc10d0473f27.jpg" alt=""></a>
+        </li>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/img1.jpg" alt=""></a></li>
+        <li><a href="https://www.baidu.com"><img src="../../爬虫/img/img2.jpg" alt=""></a></li>
+    </ul>
+    <ul class="ul2">
+        <li class="li2">1</li>
+        <li class="li2">2</li>
+        <li class="li2">3</li>
+        <li class="li2">4</li>
+    </ul>
+</div>
+</body>
+</html>

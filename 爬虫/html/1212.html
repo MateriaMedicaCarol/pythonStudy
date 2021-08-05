@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+//原始代码
+<LINK href="/dfiles/11312/system/resource/style/component/news/list/imagechangenews.css" type="text/css" rel="stylesheet" >
+<script language="javascript" src="/dfiles/11312/system/resource/js/news/imagechangenews.js" ></script>
+<script language="JavaScript" >
+var u_u3_icn = new ImageChangeNews("u_u3_", 400, 265, 4, 2.0, true, false, false, true);
+
+//初始化图片, 并启动定时
+function u_u3_init_img()
+{
+
+    u_u3_icn.addimg("\/__local\/4\/96\/5C\/F57C5597A7C41768BA75D769159_D276C443_1187E.jpg", "info\/1163\/2304.htm", "校友办与校基金会党支部开...", "");
+
+    u_u3_icn.addimg("\/__local\/0\/84\/1E\/4D429ACF1181966A8BE30843114_66981E0F_ACD3.png", "info\/1163\/2276.htm", "多家权威主流媒体报道我校...", "");
+
+    u_u3_icn.addimg("\/__local\/9\/1D\/0A\/887370A67E10ABD31E122E06DDB_A1265003_95BA.jpg", "info\/1163\/2287.htm", "副校长周娅赴深圳校友企业...", "");
+
+    u_u3_icn.addimg("\/__local\/A\/63\/11\/45E2B1B7716144F8EC560D1FA91_C85FFEE5_C44E.png", "info\/1163\/2284.htm", "我校基金会获非营利组织免...", "");
+
+    u_u3_icn.addimg("\/__local\/9\/0F\/80\/2D7CAC2C82719028FED2E692EAF_A8FD0989_10315.jpg", "info\/1163\/2283.htm", "校领导参加校友企业华安鑫...", "");
+
+    u_u3_icn.changeimg(0);
+}
+<li><a href="${news.url}" target=_blank title="${news.tipsTitle}" style="${news.cssTitleColor}">${news.showTitle}</a></li>
+
+
+</script>
+<table cellspacing="0" cellpadding="0" border="0"  style="padding:0px margin:0px; border:0px">
+    <tr ><td >
+        <div  style="overflow: hidden;height:265px;width:400px"><div id="u_u3_div" align="center"  style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv"  style="padding:0px;border:0px;"><a id="u_u3_url" target="_blank" ><img id="u_u3_pic" border="0" width="400" height="265" src="/dfiles/11312/system/resource/images/space.gif" ></a></div>
+            </div>
+            <div  style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+<a href="javascript:u_u3_icn.changeimg(0)" ; id="u_u3_selectNode0" class="imagechangenews_pnode" target="_self" >1</a><a href="javascript:u_u3_icn.changeimg(1)" ; id="u_u3_selectNode1" class="imagechangenews_pnode" target="_self" >2</a><a href="javascript:u_u3_icn.changeimg(2)" ; id="u_u3_selectNode2" class="imagechangenews_pnode" target="_self" >3</a><a href="javascript:u_u3_icn.changeimg(3)" ; id="u_u3_selectNode3" class="imagechangenews_pnode" target="_self" >4</a><a href="javascript:u_u3_icn.changeimg(4)" ; id="u_u3_selectNode4" class="imagechangenews_pnode" target="_self" >5</a>
+            </div></div></td></tr>
+
+    <tr ><td height="20" >
+        <div align="center"  style="overflow:hidden;text-overflow:ellipsis;height:20px;width:400px;"><a target="_blank" class="titlestyle201355" id="u_u3_newstitle" ></a></div>
+    </td></tr>
+<div align="left" display="none"  style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle201355" id="u_u3_newssummary" ></a></div>
+</table><SCRIPT language="JavaScript" >u_u3_init_img();</SCRIPT>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<LINK href="/dfiles/11312/system/resource/style/component/news/list/imagechangenews.css" type="text/css" rel="stylesheet" >
+<script language="javascript" src="/dfiles/11312/system/resource/js/news/imagechangenews.js" >
+
+</script>
+<script language="JavaScript" >
+var u_u3_icn = new ImageChangeNews("u_u3_", 400, 265, 4, 2.0, true, false, false, true);
+
+
+<#list list_news as news>
+
+
+function u_u3_init_img()
+{
+
+    u_u3_icn.addimg(${news.picUrl}, ${news.url}, ${news.showTitle}, "");
+
+
+
+
+}
+
+
+
+
+
+function u_u3_init_img()
+{
+ u_u3_icn.changeimg(0);}
+
+
+</script>
+<table cellspacing="0" cellpadding="0" border="0"  style="padding:0px margin:0px; border:0px">
+    <tr ><td >
+        <div  style="overflow: hidden;height:265px;width:400px">
+            <div id="u_u3_div" align="center"
+                 style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;
+                 filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv"  style="padding:0px;border:0px;">
+                    <a id="u_u3_url" target="_blank" >
+                    <img id="u_u3_pic" border="0" width="400" height="265" src="${news.picUrl}" ></a>
+                </div>
+            </div>
+
+        </div>
+    </td></tr>
+
+    <tr ><td height="20" >
+        <div align="center"  style="overflow:hidden;text-overflow:ellipsis;height:20px;width:400px;">
+            <a target="_blank" class="titlestyle201355" id="u_u3_newstitle" ></a>
+        </div>
+    </td></tr>
+<div align="left" display="none"  style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;padding-left:2px;padding-right:2px">
+    <a target="_blank" class="summarystyle201355" id="u_u3_newssummary" ></a>
+</div>
+</table>
+<SCRIPT language="JavaScript" >u_u3_init_img();
+</SCRIPT>
+</#list>
+
+
+
+
+<LINK href="/dfiles/11312/system/resource/style/component/news/list/imagechangenews.css" type="text/css" rel="stylesheet" >
+<script language="javascript" src="/dfiles/11312/system/resource/js/news/imagechangenews.js" >
+
+</script><script language="JavaScript" >
+var u_u3_icn = new ImageChangeNews("u_u3_", 400, 265, 4, 2.0, true, false, false, true);
+
+
+<#list list_news as news>
+
+
+function u_u3_init_img()
+{
+
+    u_u3_icn.addimg(${news.picUrl}, ${news.url}, ${news.showTitle}, "");
+
+
+
+
+}
+
+
+   function u_u3_init_img()
+{
+ u_u3_icn.changeimg(0);}
+
+
+
+
+
+</script>
+
+<table cellspacing="0" cellpadding="0" border="0"  style="padding:0px margin:0px; border:0px">
+    <tr ><td >
+        <div  style="overflow: hidden;height:265px;width:400px"><div id="u_u3_div" align="center"  style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv"  style="padding:0px;border:0px;">
+                    <a id="u_u3_url" target="_blank" ><img id="u_u3_pic" border="0" width="400" height="265" src="${news.picUrl}" ></a></div>
+            </div>
+            <div  style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+<a href="javascript:u_u3_icn.changeimg(0)" ; id="u_u3_selectNode0" class="imagechangenews_pnode" target="_self" >1</a><a href="javascript:u_u3_icn.changeimg(1)" ; id="u_u3_selectNode1" class="imagechangenews_pnode" target="_self" >2</a><a href="javascript:u_u3_icn.changeimg(2)" ; id="u_u3_selectNode2" class="imagechangenews_pnode" target="_self" >3</a><a href="javascript:u_u3_icn.changeimg(3)" ; id="u_u3_selectNode3" class="imagechangenews_pnode" target="_self" >4</a><a href="javascript:u_u3_icn.changeimg(4)" ; id="u_u3_selectNode4" class="imagechangenews_pnode" target="_self" >5</a>
+            </div></div></td></tr>
+
+    <tr ><td height="20" >
+        <div align="center"  style="overflow:hidden;text-overflow:ellipsis;height:20px;width:400px;"><a target="_blank" class="titlestyle201355" id="u_u3_newstitle" ></a></div>
+    </td></tr>
+<div align="left" display="none"  style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle201355" id="u_u3_newssummary" ></a></div>
+</table><SCRIPT language="JavaScript" >u_u3_init_img();</SCRIPT>
+</#list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div  style="overflow: hidden;height:265px;width:400px">
+            <div id="u_u3_div" align="center"  style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv"  style="padding:0px;border:0px;">
+                    <a id="u_u3_url" target="_blank" ><img id="u_u3_pic" border="0" width="400" height="265" src="/dfiles/11312/system/resource/images/space.gif" >
+                    </a></div>
+            </div>
+            <div  style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+                <a href="javascript:u_u3_icn.changeimg(0)" ; id="u_u3_selectNode0" class="imagechangenews_pnode" target="_self" >1</a>
+                <a href="javascript:u_u3_icn.changeimg(1)" ; id="u_u3_selectNode1" class="imagechangenews_pnode" target="_self" >2</a>
+                <a href="javascript:u_u3_icn.changeimg(2)" ; id="u_u3_selectNode2" class="imagechangenews_pnode" target="_self" >3</a>
+                <a href="javascript:u_u3_icn.changeimg(3)" ; id="u_u3_selectNode3" class="imagechangenews_pnode" target="_self" >4</a>
+                <a href="javascript:u_u3_icn.changeimg(4)" ; id="u_u3_selectNode4" class="imagechangenews_pnode" target="_self" >5</a>
+            </div></div>
+
+
+
+<#list list_news as news>
+<div  style="overflow: hidden;height:265px;width:400px">
+            <div id="u_u3_div" align="center"  style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv"  style="padding:0px;border:0px;">
+
+   <a href="${news.url}" id="u_u3_url" target="_blank" style="${news.cssTitleColor}"><img id="u_u3_pic" border="0" width="400" height="265" src="" ></a></div>
+            </div>
+            <div  style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+                <a href="javascript:u_u3_icn.changeimg(0)" ; id="u_u3_selectNode0" class="imagechangenews_pnode" target="_self" >1</a>
+                <a href="javascript:u_u3_icn.changeimg(1)" ; id="u_u3_selectNode1" class="imagechangenews_pnode" target="_self" >2</a>
+                <a href="javascript:u_u3_icn.changeimg(2)" ; id="u_u3_selectNode2" class="imagechangenews_pnode" target="_self" >3</a>
+                <a href="javascript:u_u3_icn.changeimg(3)" ; id="u_u3_selectNode3" class="imagechangenews_pnode" target="_self" >4</a>
+                <a href="javascript:u_u3_icn.changeimg(4)" ; id="u_u3_selectNode4" class="imagechangenews_pnode" target="_self" >5</a>
+            </div></div>
+</#list>
+
+
+
+
+
+
+
+
+
+<LINK href="/dfiles/11312/system/resource/style/component/news/list/imagechangenews.css" type="text/css" rel="stylesheet">
+<script language="javascript" src="/dfiles/11312/system/resource/js/news/imagechangenews.js"></script>
+<script language="JavaScript">
+var u_u3_icn = new ImageChangeNews("u_u3_", 400, 265, 4, 2.0, true, false, false, true);
+
+//初始化图片, 并启动定时
+<#list list_news as news>
+function u_u3_init_img()
+{
+
+    u_u3_icn.addimg("${news.picUrl}", "${news.url}", "${news.showTitle}", "");
+
+
+
+    u_u3_icn.changeimg(0);
+}
+</script><table cellspacing="0" cellpadding="0" border="0" style="padding:0px margin:0px; border:0px">
+    <tr><td><div style="overflow: hidden;height:265px;width:400px"><div id="u_u3_div" align="center" style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;filter: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:265px;width:400px">
+                <div id="u_u3_imgdiv" style="padding:0px;border:0px;"><a id="u_u3_url" target="_blank"><img id="u_u3_pic" border="0" width="400" height="265" src="${news.picUrl}"></a></div>
+            </div>
+            <div style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+<a href="javascript:u_u3_icn.changeimg(0)" ; id="u_u3_selectNode0" class="imagechangenews_pnode" target="_self">1</a><a href="javascript:u_u3_icn.changeimg(1)" ; id="u_u3_selectNode1" class="imagechangenews_pnode" target="_self">2</a><a href="javascript:u_u3_icn.changeimg(2)" ; id="u_u3_selectNode2" class="imagechangenews_pnode" target="_self">3</a><a href="javascript:u_u3_icn.changeimg(3)" ; id="u_u3_selectNode3" class="imagechangenews_pnode" target="_self">4</a><a href="javascript:u_u3_icn.changeimg(4)" ; id="u_u3_selectNode4" class="imagechangenews_pnode" target="_self">5</a>
+            </div></div></td></tr>
+
+    <tr><td height="20">
+        <div align="center" style="overflow:hidden;text-overflow:ellipsis;height:20px;width:400px;"><a target="_blank" class="titlestyle201355" id="u_u3_newstitle"></a></div>
+    </td></tr>
+<div align="left" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle201355" id="u_u3_newssummary"></a></div>
+</table><SCRIPT language="JavaScript">u_u3_init_img();</SCRIPT>
+
+
+
+<!--content  文章格式-->
+
+<form name="_newscontent_fromname">${v_includeJquery()}
+
+    <h2 class="title" align=center style="${cssTitleColor}">${showTitle}</h2><#--标题-->
+
+
+     <div class="article_info" ><span >来源：<#if hasSourceLink>
+        <a href="${sourceLink}">${showSource}</a>
+            <#else>${showSource}
+    </#if> </span><span >发布时间：${showDate}</span><span >审核人：${showAudit}</span><span >(<script >_showDynClicks("wbnews", 1411857535, 2381)</script>)</span></div>
+
+
+
+    <hr>
+
+      <div id="vsb_content">
+          <p style="text-align:center;text-indent:0"><span style="font-size:29px;font-family:方正小标宋简体">${showTitle}</span>
+    </p>
+
+    <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;">
+          <div id='${vsb_contentid}'>${content}</div></span>
+        </p>
+
+
+    <#if hasExtend><#--自定义属性-->
+    <table cellspacing=0 cellpadding=3 border=0 align=center style="border-collapse:collapse">
+        <#list list_extend as extend>
+            <#if extend.pos%2==1><tr></#if>
+                <td style="border:1px solid gray" width=20% >${extend.name}</td>
+                <td style="border:1px solid gray" width=30% >${extend.showValue}</td>
+            <#if extend.pos%2==0 || extend.isLast></tr></#if>
+        </#list>
+    </table>
+    </#if>
+
+
+
+
+
+
+</form>
+
+
+
+ <hr>
+
+      <div id="vsb_content"><p style="text-align:center;text-indent:0"><span style="font-size:29px;font-family:方正小标宋简体">${showTitle}</span>
+      </p>
+
+    <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;"><div id='${vsb_contentid}'>${content}</div></span>
+        </p>
+
+
+    <#if hasExtend><#--自定义属性-->
+    <table cellspacing=0 cellpadding=3 border=0 align=center style="border-collapse:collapse">
+        <#list list_extend as extend>
+            <#if extend.pos%2==1><tr></#if>
+                <td style="border:1px solid gray" width=20% >${extend.name}</td>
+                <td style="border:1px solid gray" width=30% >${extend.showValue}</td>
+            <#if extend.pos%2==0 || extend.isLast></tr></#if>
+        </#list>
+    </table>
+    </#if>
+
+
+
+
+
+
+
+<h2 class="title">我校基金会召开第一届第十三次理事会会议</h2>
+    <div class="article_info"><span>来源：刘洋 </span><span>发布时间：2021-06-18 14:34:44</span><span>审核人：</span><span>(<script>_showDynClicks("wbnews", 1411857535, 2381)</script>)</span></div>
+    <hr>
+
+
+    <div id="vsb_content">
+        <p style="text-align:center;text-indent:0">
+            <span style="font-size:29px;font-family:方正小标宋简体">我校基金会召开第一届第十三次理事会会议</span>
+        </p>
+    <p style="text-indent:43px"><span style="font-size: 16px;">6<span style="font-family: 仿宋_GB2312;">月</span>17
+        <span style="font-family: 仿宋_GB2312;">日下午，我校基金会第一届第十三次理事会会议在办公楼</span>
+        322<span style="font-family: 仿宋_GB2312;">会议室召开。副校长周娅出席了会议，党政办、校基金会、校友办、发规处、宣传部、财务处、国资处、基建处、大学科技园、校工会、纪委办、法学院等部门相关负责人参加了会议。会议由校基金会秘书长黄少波主持。</span></span>
+    </p>
+<p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;">会上，校基金会秘书长黄少波就基金会公益性捐赠税前扣除资格、非营利组织免税资格、社会组织等级评估、基金会年审年报等近期工作的开展情况向会议作了总结汇报。周娅副校长听取了校基金会近期的工作总结汇报，并对校基金会近期取得的成绩表示了肯定，她表示，一是校基金会要继续发挥自身优势，不断丰富基金会内容，不断推动基金会的可持续发展；二是专职人员要加强政策理论学习，尤其是在资金筹措、项目管理、资金运作等方面要逐步提升专业化和规范化水平；三是校基金会要深入参与到学校教学、科研、人才培养等教育事业中来，打造具有桂电特色的品牌活动。</span></p>
+<p style="text-indent:43px"><span style="font-size: 16px;"><span style="font-size: 16px; font-family: 仿宋_GB2312;">（供稿：校基金会</span> <span style="font-size: 16px; font-family: 仿宋_GB2312;">刘洋）</span></span></p>
+<p style="text-indent:43px"><span style="font-size: 16px;"><span style="font-size: 16px; font-family: 仿宋_GB2312;"></span></span></p>
+<p style="text-align: center">
+ <img src="/dfiles/11312/__local/0/5f/69/057683be0c1c1126aba5d2624f5_389d7b68_2c01d.jpg" width="500" vsbhref="vurl" vurl="/_vsl/05F69057683BE0C1C1126ABA5D2624F5/389D7B68/2C01D" vheight="" vwidth="500" orisrc="/__local/0/5F/69/057683BE0C1C1126ABA5D2624F5_389D7B68_2C01D.jpg" class="img_vsb_content"></p>
+    </div>
+<div id="div_vote_id"></div>
+
+
+//单篇正文 原来
+
+<#list list_news as news>
+<p>
+    ${news.showTitle}<br/>
+    ${news.content}
+    <#list news.list_page as page>
+        ${page.content}
+    </#list>
+    ${news.pageBar}<br/><br/>
+    ${news.attach}
+</p>
+</#list>
+
+
+
+
+
+
+<#list list_news as news>
+
+
+
+<div id="vsb_content">
+        <p style="text-align:center;text-indent:0">
+            <span style="font-size:29px;font-family:方正小标宋简体">${news.showTitle}</span>
+        </p>
+
+         <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;">
+   ${news.content}</span>
+        </p>
+
+</div>
+
+
+</#list>
+
+
+
+
+//内容页格式
+<form name="_newscontent_fromname">${v_includeJquery()}
+
+    <h2 class="title" align=center style="${cssTitleColor}">${showTitle}</h2><#--标题-->
+
+
+     <div class="article_info" ><span >来源：<#if hasSourceLink>
+        <a href="${sourceLink}">${showSource}</a>
+            <#else>${showSource}
+    </#if> </span><span >发布时间：${showDate}</span><span >审核人：${showAudit}</span><span >(<script >_showDynClicks("wbnews", 1411857535, 2381)</script>)</span></div>
+
+
+
+    <hr>
+
+      <div id="vsb_content"><p style="text-align:center;text-indent:0"><span style="font-size:29px;font-family:方正小标宋简体">${showTitle}</span>
+    </p>
+
+    <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;"><div id='${vsb_contentid}'>${content}</div></span>
+        </p>
+
+
+    <#if hasExtend><#--自定义属性-->
+    <table cellspacing=0 cellpadding=3 border=0 align=center style="border-collapse:collapse">
+        <#list list_extend as extend>
+            <#if extend.pos%2==1><tr></#if>
+                <td style="border:1px solid gray" width=20% >${extend.name}</td>
+                <td style="border:1px solid gray" width=30% >${extend.showValue}</td>
+            <#if extend.pos%2==0 || extend.isLast></tr></#if>
+        </#list>
+    </table>
+
+
+<!--<div class="fr"><a href="../1184/1593.htm" class="endowbtn" target="">我要捐赠<span>GIVE</span><i class="right"></i></a></div>-->
+
+</form>

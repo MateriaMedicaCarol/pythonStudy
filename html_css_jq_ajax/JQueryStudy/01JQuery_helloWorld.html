@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq_helloWorld</title>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script>
+        // jQuery 入口函数 多个入口函数不会覆盖
+        $(document).ready(function () {
+            alert('helloWorld')
+        })
+
+
+        // 第二种写法
+        jQuery(document).ready(function () {
+            alert('h2')
+        })
+
+        // 第三种写法
+        $(function () {
+            alert('helloWorld')
+        })
+
+
+        // 自定义访问符号
+        nj = jQuery.noConflict();
+        nj(function () {
+            alert('nj')
+        })
+
+        // 释放$的使用权
+        jQuery.noConflict();
+        jQuery(function () {
+            alert('释放')
+        })
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

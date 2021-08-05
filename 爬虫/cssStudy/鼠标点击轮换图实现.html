@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pic-show {
+            background: url(../images/img1.jpg) no-repeat;
+            width: 400px;
+            height: 320px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 400px;
+            height: 320px;
+            margin-top: 20px;
+        }
+
+
+    </style>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+<div id="pic-show"></div>
+<img src="images/1.jpg"/>
+<script>
+    $(document).ready(function (e) {
+        //div css 修改css background-image
+        $("#pic-show").hover(function () {
+            $(this).css("background-image", "url(../images/img3.jpg)");
+        }, function () {
+            $(this).css("background-image", "url(../images/img1.jpg)");
+        });
+        //image attr 修改属性
+        $("img").hover(function () {
+            $(this).attr("src", "../images/img3.jpg");
+        }, function () {
+            $(this).attr("src", "../images/img1.jpg");
+        });
+    });
+</script>
+</body>
+</html>

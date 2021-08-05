@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="JS/jquery-3.6.0.js"></script>
+    <script>
+        // $();就是核心函数
+        // 1.接收一个函数
+        $(function () {
+            // 2 接收一个字符串
+            // 2.1 字符串选择器
+            var $box1 = $('.box1')
+            console.log($box1);
+            // 2.2 接收一个代码片段
+            var $p = $('<p>我是段落</p>')
+            $box1.append($p);
+            // 2.3 接收一个dom元素
+            var span = document.getElementsByTagName('span')[0];
+            console.log(span);
+            $span = $(span)
+            console.log($span);
+
+        })
+
+    </script>
+
+</head>
+<body>
+<div class="box1"></div>
+<div id="box2"></div>
+<span>sssss</span>
+
+</body>
+</html>

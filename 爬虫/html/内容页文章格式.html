@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form name="_newscontent_fromname">${v_includeJquery()}
+
+    <h2 class="title" align=center style="${cssTitleColor}">${showTitle}</h2><#--标题-->
+
+
+     <div class="article_info" ><span >来源：<#if hasSourceLink>
+        <a href="${sourceLink}">${showSource}</a>
+            <#else>${showSource}
+    </#if> </span><span >发布时间：${showDate}</span><span >审核人：${showAudit}</span><span >(<script >_showDynClicks("wbnews", 1411857535, 2381)</script>)</span></div>
+
+
+
+    <hr>
+
+      <div id="vsb_content"><p style="text-align:center;text-indent:0"><span style="font-size:29px;font-family:方正小标宋简体">${showTitle}</span>
+    </p>
+
+    <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;"><div id='${vsb_contentid}'>${content}</div></span>
+        </p>
+
+
+
+</form>
+
+
+
+<#list list_news as news>
+<form name="_newscontent_fromname">${v_includeJquery()}
+
+
+<div id="vsb_content">
+        <p style="text-align:center;text-indent:0">
+            <span style="font-size:29px;font-family:方正小标宋简体">${news.showTitle}</span>
+        </p>
+
+         <p style="text-indent:43px"><span style="font-family: 仿宋_GB2312; font-size: 16px;">
+   ${news.content}</span>
+        </p>
+
+</div>
+
+
+
+ </form>
+
+</#list>
+
+
+
+
+</body>
+</html>
+
+
+
+<!--logo   -->
+<img src="./images/123.jpg" width="400" height="50" border="0" alt="校友办公室" title="校友办公室">
+
+
+
+<!--首页下方链接-->
+<LI>
+<H4>校友办公室</H4>
+<P><A class="tel" href="###">0773-2290055</A></P>
+<P><A class="email" href="###">xyzh@guet.edu.cn</A></P></LI>
+<LI>
+<H4>校基金会</H4>
+<P><A class="tel" href="###">0773-2290055</A></P>
+<P><A class="email" href="###">jjh@guet.edu.cn</A></P></LI></UL>
+<P class="address">广西桂林市桂林电子科技大学花江校区办公大楼323室</P></LI>
+<LI>
+<H4>关于我们</H4>
+
+<P><A href="gywm/xxqk1.htm">学校情况</A></P>
+<P><A href="gywm/zhjj.htm">总会简介</A></P>
+<P><A href="gywm/zzjg.htm">组织机构</A></P>
+<P><A href="gywm/dffh.htm">地方分会</A></P>
+<P><A href="gywm/xyxie_h.htm">行业协会</A></P>
+<P><A href="gywm/gzzd.htm">规章制度</A></P>
+<P><A href="gywm/xyzhi_jia.htm">校友之家</A></P>
+<P><A href="gywm/lxwm.htm">联系我们</A></P></LI>
+<LI>
+<H4>新闻公告</H4>
+<P><A href="xwgg/xwdt.htm">新闻动态</A></P>
+<P><A href="xwgg/zhgg.htm">总会公告</A></P>
+<P><A href="xwgg/hdyg.htm">活动预告</A></P></LI>
+<LI>
+<H4>校友活动</H4>
+<P><A href="xyhd/xqhdy.htm">校庆活动月</A></P>
+<P><A href="xyhd/znfx.htm">秩年返校</A></P>
+<P><A href="xyhd/xyhd.htm">校友活动</A></P></LI>
+<LI>
+<H4>聚焦桂电人</H4>
+<P><A href="jjgdr/gdr.htm">桂电人</A></P>
+<P><A href="jjgdr/xyqy.htm">校友企业</A></P>
+<P><A href="jjgdr/gdgu_sh.htm">桂电故事</A></P></LI>
+<LI>
+<H4>校友服务</H4>
+<P><A href="xyfw/fxzn.htm">返校指南</A></P>
+<P><A href="xyfw/xyzp.htm">校友招聘</A></P>
+<P><A href="xyfw/xyksq.htm">校友卡申请</A></P>
+<P><A href="xyfw/xytx.htm">校友通讯</A></P></LI>
+<LI>
+<H4>校基金会</H4>
+<P><A href="xjjh/jjhgk.htm">基金会概况</A></P>
+<P><A href="xjjh/lshgc.htm">理事会构成</A></P>
+<P><A href="xjjh/xxgk1.htm">信息公开</A></P>
+<P><A href="xjjh/jzzn.htm">捐赠指南</A></P>
+<P><A href="xjjh/jzxm.htm">捐赠项目</A></P>
+<P><A href="xjjh/jzmx.htm">捐赠鸣谢</A></P>
+<P><A href="xjjh/bzlc.htm">报账流程</A></P>
+<P><A href="xjjh/lxwm.htm">联系我们</A></P></LI>
+
+
+
+<LI>
+<H4>新闻公告</H4>
+</LI>
+<LI>
+<H4>校友活动</H4>
+</LI>
+<LI>
+<H4>聚焦桂电人</H4>
+</LI>
+<LI>
+<H4>校友服务</H4>
+</LI>
+
+<LI>
+<H4>校基金会</H4>
+</LI>
+</UL>

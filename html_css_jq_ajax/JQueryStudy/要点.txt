@@ -1,0 +1,7 @@
+学习视频网址：https://www.bilibili.com/video/BV17W41137jn
+
+
+
+1.jquery 对象是一个伪数组
+2.each方法
+3.map方法

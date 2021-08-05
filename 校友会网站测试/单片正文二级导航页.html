@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<#list list_news as news>
+<form name="_newscontent_fromname">${v_includeJquery()}
+
+
+<div id="vsb_content">
+        <p style="text-align:center;text-indent:0">
+            <span style="font-size:29px;font-family:方正小标宋简体">${news.showTitle}</span>
+        </p>
+
+<hr>
+         <p style="text-indent:0;display:inline-block;width:60%;word-wrap:break-word;white-space:normal;"><span style="font-family: 仿宋_GB2312; font-size: 200px;">
+   ${news.content}</span>
+        </p>
+
+</div>
+
+
+
+ </form>
+
+</#list>
+
+
+
+
+</body>
+</html>

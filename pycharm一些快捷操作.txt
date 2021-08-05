@@ -1,0 +1,15 @@
+pycharm中通过ctrl进入函数，要想返回到调用原始函数处，按时ctrl+alt+←
+注释ctrl+/
+Ctrl + Y 　　删除当前行
+Ctrl + / 　　快速在本行行首插入“#”，对单行行或选中多行进行注释（行尾注释不能采用此快捷键组合）很多软件都使用此快捷键进行注释
+Ctrl + Shift + F10　　初次run当前程序
+Ctrl + Shift + L　　格式化代码 PEP8
+Alt + 1 　　关闭tab标签
+Alt + 4　　关闭运行结果
+Alt + Enter　　快速import / insert
+Shift + F6　　重命名变量名/文件名
+Shift + F10　　run当前程序(非初次)
+Shift + Tab　　对单行或选中多行撤销回退一个tab
+Shift + Enter　　任意位置换行(快速在当前行下创建一个空行)
+Shift + Alt + ↑/↓　　向上/向下移动任意行
+alt+shift+鼠标左键 垂直选择多行

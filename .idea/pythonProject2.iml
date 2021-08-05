@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/爬虫/img" />
+      <excludeFolder url="file://$MODULE_DIR$/爬虫/csv" />
+      <excludeFolder url="file://$MODULE_DIR$/爬虫/videos" />
+      <excludeFolder url="file://$MODULE_DIR$/爬虫/html" />
+      <excludeFolder url="file://$MODULE_DIR$/校友会网站测试" />
+      <excludeFolder url="file://$MODULE_DIR$/jQuery基础" />
+      <excludeFolder url="file://$MODULE_DIR$/代码" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.9 (pythonProject)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

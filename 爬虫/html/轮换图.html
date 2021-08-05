@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .lunhuantu{
+        position: relative;
+    }
+
+    section{
+        width: 1680px;
+        height: 303px;
+        display: grid;
+        grid-template: 1fr/repeat(4,420px);
+        animation-name: slide;
+        animation-duration: 6s;
+        animation-timing-function: steps(4,end);
+        animation-iteration-count: infinite;
+    }
+     @keyframes slide {
+        to{
+            transform: translateX(-1680px);
+        }
+    }
+     section:hover,
+     section:hover+.ul::after{
+         animation-play-state: paused;
+     }
+
+
+     @keyframes num {
+         to{
+             transform: translateX(200px);
+         }
+     }
+
+     .ulul{
+         position: absolute;
+         width: 200px;
+         left:50%;
+         bottom: 50px;
+         transform:translateX(-50%);
+         display: grid;
+         grid-template: 1fr/repeat(4,1fr);
+         list-style: none;
+         justify-items: center;
+
+
+     }
+
+     .ulul::after{
+         content: '';
+         position: absolute;
+         left: 50px;
+         top: 0px;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background: #e74c3c;
+         z-index: -1;
+         animation-name: num;
+         animation-duration: 6s;
+         animation-timing-function: steps(4,end);
+         animation-iteration-count: infinite;
+     }
+
+     .lili{
+         /* 圆圈的大小*/
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background: rgba(0,0,0,.3);
+         display: grid;
+         /* 水平居中   */
+         justify-items: center;
+         /* 垂直居中   */
+         align-items: center;
+         color: white;
+     }
+</style>
+<body>
+<div style="overflow: hidden;width: 420px" class="lunhuantu">
+    <section >
+        <div style="overflow: hidden"><img style="width: 100%" src="img/191468637cab2f0206f7d1d9b175ac81.jpg" alt=""></div>
+        <div style="overflow: hidden"><img style="width: 100%" src="img/26b7e178e987be6d914bf8d1af120890.jpg" alt=""></div>
+        <div style="overflow: hidden"><img style="width: 100%" src="img/3ed27e5aedc2673755bf3327e9dcc13b.jpg" alt=""></div>
+        <div style="overflow: hidden"><img style="width: 100%" src="img/6f8d30aa4d9b79328f2699bce6bb45a6.jpg" alt=""></div>
+    </section>
+    <ul class="ulul">
+        <li class="lili">1</li>
+        <li class="lili">2</li>
+        <li class="lili">3</li>
+        <li class="lili">4</li>
+    </ul>
+</div>
+
+
+<!--   -->
+
+</body>
+</html>
+
+<img src="${news.picUrl}"  style="height: 303px;width:400px;top:5px">

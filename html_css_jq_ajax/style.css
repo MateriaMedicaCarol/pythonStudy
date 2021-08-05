@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: Verdana;
+}
+
+.cardSlider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 400px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.cardContainer {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: #ff0;
+}
+
+.cardNavbar {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.cardNavbar ul {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    height: 100%;
+}
+
+.cardNavbar ul li {
+    /*去掉li前面的点*/
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #262626;
+}
+
+.cardNavbar ul li:last-child {
+    border-right: none;
+}
+
+.cardContainer .cardSingle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*并排放置两个带边框的框*/
+    /*box-sizing: border-box;*/
+    padding: 50px;
+    background: #f00;
+    /*设置背景图像的起始位置*/
+    background-position: center !important;
+}
+
+article {
+    background: rgba(255, 255, 255, .8);
+    padding: 20px;
+
+}
+
+/*父元素的第几个子元素*/
+.cardContainer .cardSingle:nth-child(1) {
+    background: url("../爬虫/img/6b72c57a1423c866d2b9dc10d0473f27.jpg");
+}
+
+.cardContainer .cardSingle:nth-child(2) {
+    background: url("../爬虫/img/563337d07af599a9ea64e620729f367e.jpg");
+}
+
+.cardContainer .cardSingle:nth-child(3) {
+    background: url("../爬虫/img/774218be86d832f359637ab120eba52d.jpg");
+}
+
+.cardContainer .cardSingle:nth-child(4) {
+    background: url(../爬虫/img/6b72c57a1423c866d2b9dc10d0473f27.jpg);
+}
+
+
+.active {
+    z-index: 1;
+}
